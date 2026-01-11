@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1win</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="change_balance_container">
+      <input
+        class="change_balance_input_field"
+        type="text"
+        placeholder="Enter new balance"
+      />
+      <button class="add_balance_btn">CHANGE</button>
+    </div>
+
+    <div class="web_url">
+      <img src="images/lotto star.jpg" alt="" />
+    </div>
+
+    <div class="cashout_alert_container">
+      <div class="cashout_alert">
+        <div class="alert_left">
+          <span class="alert_msg">You have cashed out!</span>
+          <span class="alert_odds">2.55x</span>
+        </div>
+        <div class="alert_right">
+          <div class="alert_cashout_total">
+            <span class="alert_wins">Win, <b id="currency">USD</b></span>
+            <span class="alert_withdraw">255.00</span>
+            <span class="alert_star star_top_left"><i class="fa-regular fa-star"></i></span>
+            <span class="alert_star star_top_right"><i class="fa-regular fa-star"></i></span>
+            <span class="alert_star star_buttom_left"><i class="fa-regular fa-star"></i></span>
+            <span class="alert_star star_buttom_right"><i class="fa-regular fa-star"></i></span>
+          </div>
+          <button class="close_alert"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <div class="cashout_alert_two">
+        <div class="alert_left">
+          <span class="alert_msg">You have cashed out!</span>
+          <span class="alert_odds_two">2.55x</span>
+        </div>
+        <div class="alert_right">
+          <div class="alert_cashout_total">
+            <span class="alert_wins">Win, <b id="currency">USD</b></span>
+            <span class="alert_withdraw_two">255.00</span>
+            <span class="alert_star star_top_left"><i class="fa-regular fa-star"></i></span>
+            <span class="alert_star star_top_right"><i class="fa-regular fa-star"></i></span>
+            <span class="alert_star star_buttom_left"><i class="fa-regular fa-star"></i></span>
+            <span class="alert_star star_buttom_right"><i class="fa-regular fa-star"></i></span>
+          </div>
+          <button class="close_alert"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <header class="header_one">
+      <button class="prev-page-btn">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+    </header>
+
+    <section class="container">
+      <div class="container_left">
+        <header class="header_two">
+          <div class="header_left">
+            <div class="logo"></div>
+            <button class="how_to_play_small"></button>
+            <button class="how_to_play">
+              <span class="mark">?</span>
+              <span>How to play?</span>
+            </button>
+          </div>
+          <div class="header_two_right">
+            <div class="amount">
+              <p class="balance">0.07</p>
+              <p class="currency" id="currency">USD</p>
+            </div>
+            <div class="underline"></div>
+            <button class="menu_btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="underline"></div>
+            <button class="chat_btn"></button>
+          </div>
+        </header>
+
+        <div class="main_section">
+          <div class="betting_space_container">
+            <div class="game_history">
+              <img src="images/history.png" alt="" />
+            </div>
+
+            <div class="game_play_stage">
+              <video
+                class="play_ground_video"
+                preload="auto"
+                autoplay
+                muted
+                loop
+                playsinline
+                controls
+              >
+                <source src="https://ljblack1.github.io/aviatorgame_1win_android/vid_4208.mp4" type="video/MP4" />
+              </video>
+            </div>
+
+            <div class="game_handles">
+              <article class="handles">
+                <button class="bet_type_btn">
+                  <span class="bet active">Bet</span>
+                  <span class="auto">Auto</span>
+                </button>
+
+                <div class="place_bet_handle">
+                  <div class="bet_amout">
+                    <form class="increase_decrease_amount">
+                      <span class="decrease"><i class="fa-solid fa-minus"></i></span>
+                      <input class="stake_amount" type="text" value="1.00" />
+                      <span class="increase"><i class="fa-solid fa-plus"></i></span>
+                    </form>
+
+                    <div class="choose_amount">
+                      <button class="selected_amount">1</button>
+                      <button class="selected_amount">2</button>
+                      <button class="selected_amount">5</button>
+                      <button class="selected_amount">10</button>
+                    </div>
+                  </div>
+
+                  <button class="place_bet_btn btn btn_success" data-id="success">
+                    <span class="btn_value">Bet</span>
+                    <div class="place_bet_btn_balace">
+                      <span class="place_bet_btn_amount">5.00</span>
+                      <span class="place_bet_btn_currency" id="currency">USD</span>
+                    </div>
+                  </button>
+
+                  <button class="place_bet_btn btn_progress" data-id="success">
+                    <span class="btn_value">Bet</span>
+                    <div class="place_bet_btn_balace">
+                      <span class="place_bet_btn_amount">5.00</span>
+                      <span class="place_bet_btn_currency" id="currency">USD</span>
+                    </div>
+                  </button>
+
+                  <div class="cancel_btn_container">
+                    <span class="waiting">waiting for next round</span>
+                    <button class="place_bet_btn btn_danger" data-id="danger">
+                      <span>CANCEL</span>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="handles_two">
+                <div class="hide_handle_two"></div>
+                <button class="bet_type_btn_two">
+                  <span class="bet_two active">Bet</span>
+                  <span class="auto_two">Auto</span>
+                </button>
+
+                <div class="place_bet_handle_two">
+                  <div class="bet_amout_two">
+                    <form class="increase_decrease_amount_two">
+                      <span class="decrease_two"><i class="fa-solid fa-minus"></i></span>
+                      <input class="stake_amount_two" type="text" value="1.00" />
+                      <span class="increase_two"><i class="fa-solid fa-plus"></i></span>
+                    </form>
+
+                    <div class="choose_amount_two">
+                      <button class="selected_amount_two">1</button>
+                      <button class="selected_amount_two">2</button>
+                      <button class="selected_amount_two">5</button>
+                      <button class="selected_amount_two">10</button>
+                    </div>
+                  </div>
+
+                  <button class="place_bet_btn_two btn btn_success_two" data-id="success">
+                    <span class="btn_value_two">Bet</span>
+                    <div class="place_bet_btn_balace_two">
+                      <span class="place_bet_btn_amount_two">300.00</span>
+                      <span class="place_bet_btn_currency_two" id="currency">USD</span>
+                    </div>
+                  </button>
+
+                  <button class="place_bet_btn_two btn_progress_two" data-id="success">
+                    <span class="btn_value_two">Bet</span>
+                    <div class="place_bet_btn_balace_two">
+                      <span class="place_bet_btn_amount_two">300.00</span>
+                      <span class="place_bet_btn_currency_two" id="currency">USD</span>
+                    </div>
+                  </button>
+
+                  <div class="cancel_btn_container_two">
+                    <span class="waiting_two">waiting for next round</span>
+                    <button class="place_bet_btn_two btn_danger_two" data-id="danger">
+                      <span>CANCEL</span>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="b_play_stage">
+        <video
+          class="b_video"
+          preload="auto"
+          autoplay
+          muted
+          loop
+          playsinline
+          controls
+        >
+          <source src="https://ljblack1.github.io/aviatorgame_1win_android/bvideo_66.MP4" type="video/MP4" />
+        </video>
+
+        <div class="b_currency">
+          <p>Total win <span id="currency">USD</span></p>
+        </div>
+      </div>
+
+      <div class="ongoingbet_top">
+        <div>
+          <p>Player</p>
+          <p class="b_g">Bet <span id="currency">USD</span></p>
+        </div>
+        <div class="wg">
+          <p class="x">X</p>
+          <p>Win <span id="currency">USD</span></p>
+        </div>
+      </div>
+
+      <img src="images/ongoingbet2.jpg" alt="" class="ongoingbet" />
+    </section>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
